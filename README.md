@@ -1,71 +1,74 @@
-# Nusa vCard — Portofolio Pribadi
+# Personal Portfolio
 
-Website portofolio responsif (HTML + CSS + JavaScript murni, tanpa build, tanpa npm).
-Tata letaknya terinspirasi dari [vCard](https://github.com/codewithsadee/vcard-personal-portfolio)
-(sidebar profil + halaman bertab), tetapi seluruh kode, desain, dan aset ditulis ulang
-dengan sejumlah peningkatan.
+The layout is inspired by [vCard](https://github.com/codewithsadee/vcard-personal-portfolio).
 
-## Cara menjalankan (sekali jalan)
+A responsive portfolio website (plain HTML + CSS + JavaScript, no build step, no npm).
+Its layout (profile sidebar + tabbed pages) follows that inspiration, but all code,
+design, and assets were rewritten from scratch with a number of improvements.
 
-**Paling mudah:** klik dua kali `index.html`. Selesai.
+## How to run (one step)
 
-**Atau lewat server lokal** (lebih mirip kondisi online):
+**Easiest:** double-click `index.html`. Done.
 
-- Windows: klik dua kali `start.bat`
-- macOS / Linux: jalankan `./start.sh` (jika perlu: `chmod +x start.sh`)
-- Manual: `python -m http.server 8080` lalu buka http://localhost:8080
+**Or use a local server** (closer to the online environment):
 
-Tidak ada yang perlu diinstal. Font Google dimuat dari internet jika tersedia;
-bila offline, otomatis memakai font sistem.
+- Windows: double-click `start.bat`
+- macOS / Linux: run `./start.sh` (if needed: `chmod +x start.sh`)
+- Manual: `python -m http.server 8080`, then open http://localhost:8080
 
-## Mengganti isi website
+Nothing needs to be installed. Google Fonts are loaded from the internet when
+available; when offline, the site automatically falls back to system fonts.
 
-Semua konten ada di **`js/data.js`**: nama, foto, kontak, layanan, testimoni,
-resume, keahlian, proyek, dan artikel blog. Teks ditulis dua bahasa:
+## Changing the content
+
+All content lives in **`js/data.js`**: name, photo, contact details, services,
+testimonials, resume, skills, projects, and blog posts. Text is written in two
+languages:
 
 ```js
 title: { id: "Judul Indonesia", en: "English title" }
 ```
 
-| Yang ingin diganti        | Lokasi                                              |
+| What you want to change   | Where                                               |
 | ------------------------- | --------------------------------------------------- |
-| Nama, email, sosial media | `js/data.js` → `profile`                            |
-| Foto profil               | ganti `assets/img/avatar.png` (atau `.jpg`, lalu ubah `profile.avatar`) |
-| Proyek                    | `js/data.js` → `projects` (gambar di `assets/img/`) |
-| Artikel                   | `js/data.js` → `posts`                              |
-| Teks tombol/label         | `js/i18n.js`                                        |
-| Warna dasar & aksen       | bagian atas `css/style.css`                         |
+| Name, email, social media | `js/data.js` → `profile`                            |
+| Profile photo             | replace `assets/img/avatar.png` (or use `.jpg` and update `profile.avatar`) |
+| Projects                  | `js/data.js` → `projects` (images in `assets/img/`) |
+| Blog posts                | `js/data.js` → `posts`                              |
+| Button/label text         | `js/i18n.js`                                        |
+| Base and accent colors    | top of `css/style.css`                              |
 
-### Formulir kontak
-Secara bawaan formulir membuka aplikasi email dengan pesan siap kirim (`mailto:`).
-Agar terkirim langsung dari website, daftar di layanan formulir seperti Formspree
-lalu isi `contact.endpoint` di `js/data.js` dengan URL-nya.
+### Contact form
+By default, the form opens the email app with a ready-to-send message (`mailto:`).
+To send messages directly from the website, sign up for a form service such as
+Formspree and fill in `contact.endpoint` in `js/data.js` with its URL.
 
-## Apa yang diubah dibanding vCard asli
+## What was changed compared to the original vCard
 
-- Tema **terang/gelap** (mengikuti sistem, ingatan pilihan) dan **4 warna aksen**
-- **Dua bahasa** Indonesia/Inggris dengan satu klik
-- Konten **terpusat di `data.js`**, tidak perlu menyunting HTML
-- Efek mengetik pada peran, penghitung statistik, dan bar keahlian beranimasi
-- Portofolio dengan **filter + pencarian** dan jendela detail proyek
-- Blog dengan **filter topik + pencarian** dan pembaca artikel
-- Testimoni yang bisa dibuka penuh, daftar teknologi, dan layanan
-- Formulir kontak dengan **validasi**, tombol salin email, dan tautan WhatsApp
-- Tombol **Cetak / simpan PDF** untuk resume (tata letak khusus cetak)
-- Aksesibilitas: tautan lewati-konten, fokus keyboard terlihat, ARIA, `prefers-reduced-motion`
-- Tanpa dependensi: semua gambar berupa file **PNG/JPG** lokal, bisa jalan offline
-- Routing lewat hash, jadi `index.html#portfolio` bisa dibagikan langsung
+- **Light/dark** theme (follows the system and remembers your choice) and **4 accent colors**
+- **Two languages**, Indonesian/English, with one click
+- Content **centralized in `data.js`**, so there is no need to edit the HTML
+- Typing effect for roles, animated statistics counters, and animated skill bars
+- Portfolio with **filter + search** and a project detail window
+- Blog with **topic filter + search** and an article reader
+- Testimonials that can be opened in full, a technology list, and services
+- Contact form with **validation**, a copy-email button, and a WhatsApp link
+- **Print / save as PDF** button for the resume (dedicated print layout)
+- Accessibility: skip-to-content link, visible keyboard focus, ARIA, `prefers-reduced-motion`
+- No dependencies: all images are local **PNG/JPG** files, so it works offline
+- Hash-based routing, so `index.html#portfolio` can be shared directly
 
-## Struktur
+## Structure
 
 ```
-nusa-vcard/
+Portofolio-Bimo.github.io/
 ├─ index.html
-├─ css/style.css
+├─ css/
+│  └─ style.css
 ├─ js/
-│  ├─ data.js     ← konten (edit di sini)
-│  ├─ i18n.js     ← teks antarmuka
-│  └─ app.js      ← logika
+│  ├─ data.js     ← content (edit here)
+│  ├─ i18n.js     ← interface text
+│  └─ app.js      ← logic
 ├─ assets/
 │  ├─ favicon.png, apple-touch-icon.png
 │  └─ img/        ← avatar.png, project-*.jpg, blog-*.jpg
@@ -73,18 +76,18 @@ nusa-vcard/
 └─ LICENSE
 ```
 
-## Ukuran gambar yang disarankan
+## Recommended image sizes
 
-| Gambar          | Ukuran           | Format     |
+| Image           | Size             | Format     |
 | --------------- | ---------------- | ---------- |
-| Foto profil     | 800 × 800 px     | PNG / JPG  |
-| Cover proyek    | 1600 × 1000 px   | JPG        |
-| Cover blog      | 1600 × 900 px    | JPG        |
+| Profile photo   | 800 × 800 px     | PNG / JPG  |
+| Project cover   | 1600 × 1000 px   | JPG        |
+| Blog cover      | 1600 × 900 px    | JPG        |
 | Favicon         | 256 × 256 px     | PNG        |
 
-Gambar contoh sudah dibuat dua kali lipat dari ukuran tampil agar tetap tajam di layar retina.
-Gambar akan dipotong otomatis (`object-fit: cover`), jadi rasio yang berbeda tetap aman.
+The sample images are made at twice their display size to stay sharp on retina screens.
+Images are cropped automatically (`object-fit: cover`), so different aspect ratios are still safe to use.
 
-## Catatan
-Nama, kontak, proyek, dan artikel adalah **contoh fiktif**. Ganti sebelum dipublikasikan.
-Untuk hosting gratis, unggah seluruh folder ke GitHub Pages, Netlify, atau Cloudflare Pages.
+## Notes
+The name, contact details, projects, and articles are **fictional examples**. Replace them before publishing.
+For free hosting, upload the whole folder to GitHub Pages, Netlify, or Cloudflare Pages.
