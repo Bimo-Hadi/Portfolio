@@ -6,8 +6,8 @@
 
 window.SITE = {
   profile: {
-    name: "Bimo Hadi Permaan",
-    avatar: "assets/img/avatar.png",
+    name: "Bimo Hadi Permana",
+    avatar: "Folders/assets/img/avatar.png",
     roles: {
       id: ["Bioinformatika", "AI/ML Engineer", "Genomic"],
       en: ["Bioinformatics", "AI/ML Designer", "Genomic"]
@@ -131,7 +131,7 @@ window.SITE = {
 
   /* category: web | mobile | design | api */
   projects: [
-    { id: "warung-pintar", category: "web", year: 2025, cover: "assets/img/project-1.jpg",
+    { id: "warung-pintar", category: "web", year: 2025, cover: "Folders/assets/img/project-1.jpg",
       title: { id: "Warung Pintar", en: "Warung Pintar" },
       summary: { id: "Aplikasi kasir dan stok barang untuk warung dan toko kelontong.",
                  en: "Point-of-sale and inventory app for small grocery shops." },
@@ -140,7 +140,7 @@ window.SITE = {
       tech: ["React", "Node.js", "PostgreSQL", "PWA"],
       links: { demo: "https://example.com/", repo: "https://github.com/" } },
 
-    { id: "rute-kita", category: "mobile", year: 2025, cover: "assets/img/project-2.jpg",
+    { id: "rute-kita", category: "mobile", year: 2025, cover: "Folders/assets/img/project-2.jpg",
       title: { id: "Rute Kita", en: "Rute Kita" },
       summary: { id: "Perencana perjalanan komuter dengan estimasi waktu tempuh nyata.",
                  en: "Commuter route planner with realistic travel-time estimates." },
@@ -149,7 +149,7 @@ window.SITE = {
       tech: ["React Native", "TypeScript", "Firebase"],
       links: { demo: "https://example.com/", repo: "" } },
 
-    { id: "kopi-senja", category: "design", year: 2024, cover: "assets/img/project-3.jpg",
+    { id: "kopi-senja", category: "design", year: 2024, cover: "Folders/assets/img/project-3.jpg",
       title: { id: "Kopi Senja", en: "Kopi Senja" },
       summary: { id: "Identitas merek dan toko daring untuk roastery lokal.",
                  en: "Brand identity and online shop for a local coffee roastery." },
@@ -158,7 +158,7 @@ window.SITE = {
       tech: ["Figma", "Branding", "Shopify"],
       links: { demo: "https://example.com/", repo: "" } },
 
-    { id: "sigap-api", category: "api", year: 2024, cover: "assets/img/project-4.jpg",
+    { id: "sigap-api", category: "api", year: 2024, cover: "Folders/assets/img/project-4.jpg",
       title: { id: "Sigap API", en: "Sigap API" },
       summary: { id: "API peringatan dini banjir dan cuaca ekstrem untuk aplikasi pihak ketiga.",
                  en: "Early-warning API for floods and extreme weather, built for third-party apps." },
@@ -167,7 +167,7 @@ window.SITE = {
       tech: ["Node.js", "PostgreSQL", "Docker", "OpenAPI"],
       links: { demo: "https://example.com/", repo: "https://github.com/" } },
 
-    { id: "belajar-yuk", category: "web", year: 2023, cover: "assets/img/project-5.jpg",
+    { id: "belajar-yuk", category: "web", year: 2023, cover: "Folders/assets/img/project-5.jpg",
       title: { id: "Belajar Yuk", en: "Belajar Yuk" },
       summary: { id: "Dasbor belajar daring dengan kuis, progres, dan forum diskusi.",
                  en: "Online learning dashboard with quizzes, progress tracking, and discussion forums." },
@@ -176,7 +176,7 @@ window.SITE = {
       tech: ["Next.js", "TypeScript", "Prisma", "Tailwind CSS"],
       links: { demo: "https://example.com/", repo: "https://github.com/" } },
 
-    { id: "jajan-lokal", category: "mobile", year: 2023, cover: "assets/img/project-6.jpg",
+    { id: "jajan-lokal", category: "mobile", year: 2023, cover: "Folders/assets/img/project-6.jpg",
       title: { id: "Jajan Lokal", en: "Jajan Lokal" },
       summary: { id: "Aplikasi pesan makanan dari pedagang kaki lima sekitar.",
                  en: "Food ordering app for nearby street vendors." },
@@ -188,7 +188,7 @@ window.SITE = {
 
   /* category: frontend | backend | career */
   posts: [
-    { id: "css-modern", category: "frontend", date: "2026-09-20", minutes: 4, cover: "assets/img/blog-1.jpg",
+    { id: "css-modern", category: "frontend", date: "2026-09-20", minutes: 4, cover: "Folders/assets/img/blog-1.jpg",
       title: { id: "Kenapa Saya Kembali ke CSS Modern", en: "Why I Went Back to Modern CSS" },
       excerpt: { id: "Grid, container query, dan color-mix membuat banyak library UI tidak lagi diperlukan.",
                  en: "Grid, container queries, and color-mix make many UI libraries unnecessary." },
@@ -200,7 +200,7 @@ window.SITE = {
              "Features like color-mix() and custom properties make light and dark themes possible in a dozen lines. Basic tasks no longer need a preprocessor, and file sizes drop noticeably.",
              "That doesn't make frameworks useless. For large teams, shared conventions still matter. But for small to mid-size projects, modern CSS is often enough, and the result is lighter and easier for newcomers to read."] } },
 
-    { id: "aksesibilitas", category: "frontend", date: "2026-08-02", minutes: 5, cover: "assets/img/blog-2.jpg",
+    { id: "aksesibilitas", category: "frontend", date: "2026-08-02", minutes: 5, cover: "Folders/assets/img/blog-2.jpg",
       title: { id: "Aksesibilitas untuk Pemula: Lima Langkah Pertama", en: "Accessibility for Beginners: Five First Steps" },
       excerpt: { id: "Mulai dari HTML semantik, kontras warna, dan fokus keyboard. Tidak perlu alat mahal.",
                  en: "Start with semantic HTML, colour contrast, and keyboard focus. No expensive tools needed." },
@@ -212,7 +212,7 @@ window.SITE = {
              "Next is contrast. Light grey text on white may look elegant, but it's hard to read in sunlight. Check for a contrast ratio of at least 4.5 to 1 for body text.",
              "Finally, try using your site with only a keyboard. Every interactive element should be reachable with Tab, show a clear focus indicator, and never trap focus. Ten minutes of this kind of testing often uncovers the biggest problems."] } },
 
-    { id: "kesalahan-junior", category: "career", date: "2026-06-11", minutes: 6, cover: "assets/img/blog-3.jpg",
+    { id: "kesalahan-junior", category: "career", date: "2026-06-11", minutes: 6, cover: "Folders/assets/img/blog-3.jpg",
       title: { id: "Lima Kesalahan Saya sebagai Developer Junior", en: "Five Mistakes I Made as a Junior Developer" },
       excerpt: { id: "Dari terlalu lama bertahan pada satu bug sampai takut bertanya. Semoga kamu bisa melewatinya lebih cepat.",
                  en: "From sticking with one bug too long to being afraid to ask. Hopefully you can get past them faster." },
@@ -224,7 +224,7 @@ window.SITE = {
              "Another mistake was writing code without thinking about the person who'd read it six months later, which was me. Clear variable names and short comments about why, not how, save a lot of time.",
              "I also chased the newest technology too often. In the end, a solid grasp of HTTP, databases, and data structures is worth more than memorising ten frameworks."] } },
 
-    { id: "api-ramah", category: "backend", date: "2026-04-25", minutes: 5, cover: "assets/img/blog-4.jpg",
+    { id: "api-ramah", category: "backend", date: "2026-04-25", minutes: 5, cover: "Folders/assets/img/blog-4.jpg",
       title: { id: "Merancang API yang Ramah Developer", en: "Designing a Developer-friendly API" },
       excerpt: { id: "Penamaan konsisten, pesan galat yang jelas, dan dokumentasi yang bisa dicoba langsung.",
                  en: "Consistent naming, clear error messages, and documentation you can try right away." },
