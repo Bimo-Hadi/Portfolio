@@ -9,8 +9,8 @@ window.SITE = {
     name: "Bimo Hadi Permana",
     avatar: "Folders/assets/img/avatar.png",
     roles: {
-      id: ["Bioinformatika", "AI/ML Engineer", "Genomic"],
-      en: ["Bioinformatics", "AI/ML Designer", "Genomic"]
+      id: ["Bioinformatika", "AI/ML Engineer", "Genomik"],
+      en: ["Bioinformatics", "AI/ML Engineer", "Genomic"]
     },
     status: {
       id: "Terbuka untuk proyek freelance dan lab molekular-sel",
@@ -25,7 +25,7 @@ window.SITE = {
       { icon: "github",    label: "GitHub",    url: "https://github.com/bimo-hadii" },
       { icon: "linkedin",  label: "LinkedIn",  url: "https://www.linkedin.com/bimo-hadi-permana" },
       { icon: "instagram", label: "Instagram", url: "https://www.instagram.com/bimo.hadii" },
-      { icon: "globe",     label: "Website",   url: "https://www.google.com/maps/place//@-6.2241323,106.9508785,18.62z/data=!4m3!1m2!2m1!1sbintara+iv?entry=ttu&g_ep=EgoyMDI2MTExNi4wIKXMDSoASAFQAw%3D%3D" }
+      { icon: "globe",     label: "Website",   url: "https://share.google/KoyrnBjFjfMcEQUvH" }
     ]
   },
 
