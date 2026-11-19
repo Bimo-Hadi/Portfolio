@@ -80,7 +80,7 @@ window.SITE = {
               en: "Bimo's workshop was easy to follow and full of real examples. My students could apply it to their final projects right away." } }
   ],
 
-  stack: ["HTML5", "CSS3", "JavaScript", "React", "Next.js", "Node.js", "Laravel", "R Programming"
+  stack: ["HTML5", "CSS3", "JavaScript", "React", "Next.js", "Node.js", "Laravel", "R Programming",
           "PostgreSQL", "MongoDB", "Docker", "Git", "Figma", "Tailwind CSS", "React Native", "Linux"],
 
   education: [
