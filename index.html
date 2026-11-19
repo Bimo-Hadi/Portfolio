@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="dark" data-accent="iris">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Alya Putri Rahma — Pengembang Full-stack &amp; Desainer UI/UX</title>
+  <meta name="description" content="Portofolio Alya Putri Rahma: proyek web, aplikasi mobile, desain UI/UX, dan tulisan seputar pengembangan perangkat lunak.">
+  <meta name="theme-color" content="#0D0F15">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Alya Putri Rahma — Pengembang Full-stack &amp; Desainer UI/UX">
+  <meta property="og:description" content="Portofolio proyek web, aplikasi mobile, dan desain UI/UX.">
+  <link rel="icon" href="assets/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+
+  <!-- Font (opsional, ada cadangan font sistem bila offline) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Terapkan tema tersimpan sebelum halaman digambar, supaya tidak berkedip -->
+  <script>
+    (function () {
+      var d = document.documentElement;
+      d.classList.add('js');
+      try {
+        var th = localStorage.getItem('theme');
+        var ac = localStorage.getItem('accent');
+        if (th === 'light' || th === 'dark') d.setAttribute('data-theme', th);
+        else if (window.matchMedia && matchMedia('(prefers-color-scheme: light)').matches) d.setAttribute('data-theme', 'light');
+        if (['iris', 'mint', 'amber', 'rose'].indexOf(ac) > -1) d.setAttribute('data-accent', ac);
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+
+<!-- Sprite ikon (gaya garis, tanpa dependensi luar) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="i-mail" viewBox="0 0 24 24"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+  <symbol id="i-map-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></symbol>
+  <symbol id="i-calendar" viewBox="0 0 24 24"><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></symbol>
+  <symbol id="i-github" viewBox="0 0 24 24"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></symbol>
+  <symbol id="i-linkedin" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></symbol>
+  <symbol id="i-instagram" viewBox="0 0 24 24"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><path d="M17.5 6.5h.01"/></symbol>
+  <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></symbol>
+  <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></symbol>
+  <symbol id="i-moon" viewBox="0 0 24 24"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></symbol>
+  <symbol id="i-palette" viewBox="0 0 24 24"><circle cx="13.5" cy="6.5" r=".5"/><circle cx="17.5" cy="10.5" r=".5"/><circle cx="8.5" cy="7.5" r=".5"/><circle cx="6.5" cy="12.5" r=".5"/><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z"/></symbol>
+  <symbol id="i-chevron-down" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
+  <symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+  <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></symbol>
+  <symbol id="i-send" viewBox="0 0 24 24"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></symbol>
+  <symbol id="i-copy" viewBox="0 0 24 24"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></symbol>
+  <symbol id="i-printer" viewBox="0 0 24 24"><path d="M6 9V2h12v7"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect width="12" height="8" x="6" y="14"/></symbol>
+  <symbol id="i-external" viewBox="0 0 24 24"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></symbol>
+  <symbol id="i-message" viewBox="0 0 24 24"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></symbol>
+  <symbol id="i-code" viewBox="0 0 24 24"><path d="m16 18 6-6-6-6"/><path d="m8 6-6 6 6 6"/></symbol>
+  <symbol id="i-smartphone" viewBox="0 0 24 24"><rect width="14" height="20" x="5" y="2" rx="2" ry="2"/><path d="M12 18h.01"/></symbol>
+  <symbol id="i-layers" viewBox="0 0 24 24"><path d="m12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83Z"/><path d="m22 17.65-9.17 4.16a2 2 0 0 1-1.66 0L2 17.65"/><path d="m22 12.65-9.17 4.16a2 2 0 0 1-1.66 0L2 12.65"/></symbol>
+  <symbol id="i-server" viewBox="0 0 24 24"><rect width="20" height="8" x="2" y="2" rx="2" ry="2"/><rect width="20" height="8" x="2" y="14" rx="2" ry="2"/><path d="M6 6h.01M6 18h.01"/></symbol>
+  <symbol id="i-book" viewBox="0 0 24 24"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></symbol>
+  <symbol id="i-briefcase" viewBox="0 0 24 24"><rect width="20" height="14" x="2" y="7" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></symbol>
+  <symbol id="i-bolt" viewBox="0 0 24 24"><path d="M13 2 3 14h9l-1 8 10-12h-9z"/></symbol>
+  <symbol id="i-user" viewBox="0 0 24 24"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></symbol>
+  <symbol id="i-file" viewBox="0 0 24 24"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><path d="M14 2v6h6M16 13H8M16 17H8M10 9H8"/></symbol>
+  <symbol id="i-grid" viewBox="0 0 24 24"><rect width="7" height="7" x="3" y="3" rx="1"/><rect width="7" height="7" x="14" y="3" rx="1"/><rect width="7" height="7" x="14" y="14" rx="1"/><rect width="7" height="7" x="3" y="14" rx="1"/></symbol>
+  <symbol id="i-pen" viewBox="0 0 24 24"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4Z"/></symbol>
+</svg>
+
+<a class="skip" href="#main" data-i18n="skip">Lewati ke konten utama</a>
+
+<div class="shell">
+
+  <!-- ================= SIDEBAR ================= -->
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar__top">
+      <div class="avatar" aria-hidden="true">
+        <span class="avatar__ring"></span>
+        <img id="s-avatar" src="assets/img/avatar.png" alt="" width="400" height="400">
+      </div>
+      <div class="sidebar__id">
+        <h1 class="name" id="s-name">Alya Putri Rahma</h1>
+        <p class="role">
+          <span class="sr-only" id="s-roles-sr"></span>
+          <span id="typed" aria-hidden="true"></span><span class="caret" aria-hidden="true"></span>
+        </p>
+      </div>
+      <button class="sidebar__toggle" id="sidebar-toggle" type="button" aria-expanded="false" aria-controls="sidebar-more">
+        <span id="sidebar-toggle-label" data-i18n="sidebar.show">Tampilkan kontak</span>
+        <svg class="i" width="16" height="16" aria-hidden="true"><use href="#i-chevron-down"/></svg>
+      </button>
+    </div>
+
+    <div class="sidebar__more" id="sidebar-more">
+      <p class="status"><span class="status__dot" aria-hidden="true"></span><span id="s-status"></span></p>
+      <ul class="contacts" id="s-contacts"></ul>
+      <ul class="socials" id="s-socials" data-i18n-aria="sidebar.social"></ul>
+    </div>
+  </aside>
+
+  <!-- ================= MAIN ================= -->
+  <div class="main">
+    <header class="topbar">
+      <nav class="nav" id="nav" data-i18n-aria="nav.label">
+        <a href="#about"     data-nav="about"><svg class="i" width="20" height="20" aria-hidden="true"><use href="#i-user"/></svg><span data-i18n="nav.about">Tentang</span></a>
+        <a href="#resume"    data-nav="resume"><svg class="i" width="20" height="20" aria-hidden="true"><use href="#i-file"/></svg><span data-i18n="nav.resume">Resume</span></a>
+        <a href="#portfolio" data-nav="portfolio"><svg class="i" width="20" height="20" aria-hidden="true"><use href="#i-grid"/></svg><span data-i18n="nav.portfolio">Portofolio</span></a>
+        <a href="#blog"      data-nav="blog"><svg class="i" width="20" height="20" aria-hidden="true"><use href="#i-pen"/></svg><span data-i18n="nav.blog">Blog</span></a>
+        <a href="#contact"   data-nav="contact"><svg class="i" width="20" height="20" aria-hidden="true"><use href="#i-mail"/></svg><span data-i18n="nav.contact">Kontak</span></a>
+      </nav>
+
+      <div class="tools">
+        <button class="tool" id="t-theme" type="button">
+          <svg class="i" width="18" height="18" aria-hidden="true"><use id="t-theme-icon" href="#i-sun"/></svg>
+        </button>
+        <button class="tool tool--lang" id="t-lang" type="button">
+          <span class="seg" data-lang="id">ID</span><span class="seg" data-lang="en">EN</span>
+        </button>
+        <div class="tool-wrap">
+          <button class="tool" id="t-accent" type="button" aria-haspopup="true" aria-expanded="false" aria-controls="swatches">
+            <svg class="i" width="18" height="18" aria-hidden="true"><use href="#i-palette"/></svg>
+          </button>
+          <div class="swatches" id="swatches" role="group" data-i18n-aria="tools.accentLabel" hidden>
+            <button type="button" class="swatch" data-accent="iris"></button>
+            <button type="button" class="swatch" data-accent="mint"></button>
+            <button type="button" class="swatch" data-accent="amber"></button>
+            <button type="button" class="swatch" data-accent="rose"></button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main id="main" class="content">
+
+      <!-- ===== ABOUT ===== -->
+      <article class="page" id="page-about" data-page="about" aria-labelledby="h-about">
+        <h2 class="page__title" id="h-about" tabindex="-1" data-i18n="about.title">Tentang saya</h2>
+        <div class="prose" id="about-text"></div>
+        <ul class="stats" id="about-stats"></ul>
+
+        <section class="block" aria-labelledby="h-services">
+          <h3 class="block__title" id="h-services" data-i18n="about.services">Layanan</h3>
+          <ul class="services" id="about-services"></ul>
+        </section>
+
+        <section class="block" aria-labelledby="h-testi">
+          <h3 class="block__title" id="h-testi" data-i18n="about.testimonials">Kata mereka</h3>
+          <ul class="testi" id="about-testi"></ul>
+        </section>
+
+        <section class="block" aria-labelledby="h-stack">
+          <h3 class="block__title" id="h-stack" data-i18n="about.stack">Teknologi</h3>
+          <ul class="chips chips--static" id="about-stack"></ul>
+        </section>
+      </article>
+
+      <!-- ===== RESUME ===== -->
+      <article class="page" id="page-resume" data-page="resume" aria-labelledby="h-resume" hidden>
+        <div class="page__head">
+          <h2 class="page__title" id="h-resume" tabindex="-1" data-i18n="resume.title">Resume</h2>
+          <button class="btn btn--ghost no-print" id="btn-print" type="button">
+            <svg class="i" width="18" height="18" aria-hidden="true"><use href="#i-printer"/></svg>
+            <span data-i18n="resume.print">Cetak atau simpan PDF</span>
+          </button>
+        </div>
+
+        <div class="cols">
+          <section class="block" aria-labelledby="h-exp">
+            <h3 class="block__title block__title--icon" id="h-exp"><svg class="i" width="20" height="20" aria-hidden="true"><use href="#i-briefcase"/></svg><span data-i18n="resume.experience">Pengalaman</span></h3>
+            <ol class="timeline" id="r-exp"></ol>
+          </section>
+          <section class="block" aria-labelledby="h-edu">
+            <h3 class="block__title block__title--icon" id="h-edu"><svg class="i" width="20" height="20" aria-hidden="true"><use href="#i-book"/></svg><span data-i18n="resume.education">Pendidikan</span></h3>
+            <ol class="timeline" id="r-edu"></ol>
+          </section>
+        </div>
+
+        <section class="block" aria-labelledby="h-skills">
+          <h3 class="block__title block__title--icon" id="h-skills"><svg class="i" width="20" height="20" aria-hidden="true"><use href="#i-bolt"/></svg><span data-i18n="resume.skills">Keahlian</span></h3>
+          <ul class="skills" id="r-skills"></ul>
+        </section>
+      </article>
+
+      <!-- ===== PORTFOLIO ===== -->
+      <article class="page" id="page-portfolio" data-page="portfolio" aria-labelledby="h-portfolio" hidden>
+        <h2 class="page__title" id="h-portfolio" tabindex="-1" data-i18n="portfolio.title">Portofolio</h2>
+        <div class="toolbar">
+          <div class="chips" id="p-chips" role="group" data-i18n-aria="portfolio.filter"></div>
+          <label class="search">
+            <span class="sr-only" data-i18n="portfolio.search">Cari proyek</span>
+            <svg class="i" width="18" height="18" aria-hidden="true"><use href="#i-search"/></svg>
+            <input type="search" id="p-search" autocomplete="off" data-i18n-placeholder="portfolio.searchPlaceholder">
+          </label>
+        </div>
+        <ul class="grid" id="p-grid"></ul>
+        <p class="empty" id="p-empty" hidden></p>
+      </article>
+
+      <!-- ===== BLOG ===== -->
+      <article class="page" id="page-blog" data-page="blog" aria-labelledby="h-blog" hidden>
+        <h2 class="page__title" id="h-blog" tabindex="-1" data-i18n="blog.title">Blog</h2>
+        <div class="toolbar">
+          <div class="chips" id="b-chips" role="group" data-i18n-aria="blog.filter"></div>
+          <label class="search">
+            <span class="sr-only" data-i18n="blog.search">Cari artikel</span>
+            <svg class="i" width="18" height="18" aria-hidden="true"><use href="#i-search"/></svg>
+            <input type="search" id="b-search" autocomplete="off" data-i18n-placeholder="blog.searchPlaceholder">
+          </label>
+        </div>
+        <ul class="posts" id="b-list"></ul>
+        <p class="empty" id="b-empty" hidden></p>
+      </article>
+
+      <!-- ===== CONTACT ===== -->
+      <article class="page" id="page-contact" data-page="contact" aria-labelledby="h-contact" hidden>
+        <h2 class="page__title" id="h-contact" tabindex="-1" data-i18n="contact.title">Kontak</h2>
+        <p class="prose lead" data-i18n="contact.intro"></p>
+
+        <div class="contact">
+          <section class="contact__direct" aria-labelledby="h-direct">
+            <h3 class="block__title" id="h-direct" data-i18n="contact.direct">Hubungi langsung</h3>
+            <div class="mailbox">
+              <svg class="i" width="20" height="20" aria-hidden="true"><use href="#i-mail"/></svg>
+              <a id="c-email" href="#"></a>
+              <button class="btn btn--small" id="c-copy" type="button">
+                <svg class="i" width="16" height="16" aria-hidden="true"><use href="#i-copy"/></svg>
+                <span data-i18n="contact.copy">Salin email</span>
+              </button>
+            </div>
+            <a class="btn btn--wide" id="c-wa" href="#" target="_blank" rel="noopener">
+              <svg class="i" width="18" height="18" aria-hidden="true"><use href="#i-message"/></svg>
+              <span data-i18n="contact.whatsapp">Chat WhatsApp</span>
+            </a>
+            <p class="note"><svg class="i" width="16" height="16" aria-hidden="true"><use href="#i-clock"/></svg><span id="c-reply"></span></p>
+          </section>
+
+          <section class="contact__form" aria-labelledby="h-form">
+            <h3 class="block__title" id="h-form" data-i18n="contact.form">Kirim pesan</h3>
+            <form id="contact-form" novalidate>
+              <div class="field">
+                <label for="f-name" data-i18n="contact.name">Nama</label>
+                <input id="f-name" name="name" type="text" autocomplete="name" aria-describedby="e-name">
+                <p class="field__error" id="e-name" hidden></p>
+              </div>
+              <div class="field">
+                <label for="f-email" data-i18n="contact.email">Email</label>
+                <input id="f-email" name="email" type="email" autocomplete="email" aria-describedby="e-email">
+                <p class="field__error" id="e-email" hidden></p>
+              </div>
+              <div class="field field--full">
+                <label for="f-subject"><span data-i18n="contact.subject">Subjek</span> <span class="opt">(<span data-i18n="contact.optional">opsional</span>)</span></label>
+                <input id="f-subject" name="subject" type="text">
+              </div>
+              <div class="field field--full">
+                <label for="f-message" data-i18n="contact.message">Pesan</label>
+                <textarea id="f-message" name="message" rows="5" aria-describedby="e-message"></textarea>
+                <p class="field__error" id="e-message" hidden></p>
+              </div>
+              <div class="field--full">
+                <button class="btn" id="f-submit" type="submit">
+                  <svg class="i" width="18" height="18" aria-hidden="true"><use href="#i-send"/></svg>
+                  <span data-i18n="contact.send">Kirim pesan</span>
+                </button>
+              </div>
+            </form>
+          </section>
+        </div>
+      </article>
+
+      <footer class="footer"><p data-i18n="footer"></p></footer>
+    </main>
+  </div>
+</div>
+
+<!-- Modal detail (proyek, artikel, testimoni) -->
+<dialog class="modal" id="modal" aria-labelledby="m-title">
+  <div class="modal__panel">
+    <button class="modal__close" id="modal-close" type="button" data-i18n-aria="modal.close">
+      <svg class="i" width="20" height="20" aria-hidden="true"><use href="#i-x"/></svg>
+    </button>
+    <div id="modal-body"></div>
+  </div>
+</dialog>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<noscript><p class="noscript">Website ini membutuhkan JavaScript untuk menampilkan konten. / This website needs JavaScript.</p></noscript>
+
+<script src="js/data.js"></script>
+<script src="js/i18n.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
