@@ -70,35 +70,33 @@ window.SITE = {
 
   testimonials: [
     { name: "Dimas Anggara", role: { id: "Pemilik Warung Pintar", en: "Owner, Warung Pintar" }, initials: "DA",
-      text: { id: "Alya mengubah kebutuhan kami yang berantakan menjadi aplikasi kasir yang rapi. Pegawai baru pun bisa memakainya dalam satu hari. Komunikasinya jelas dan hasilnya selalu tepat waktu.",
-              en: "Alya turned our messy requirements into a tidy point-of-sale app. New staff can use it within a day. Communication was clear and delivery was always on time." } },
+      text: { id: "Bimo mengubah kebutuhan kami yang berantakan menjadi aplikasi kasir yang rapi. Pegawai baru pun bisa memakainya dalam satu hari. Komunikasinya jelas dan hasilnya selalu tepat waktu.",
+              en: "Bimo turned our messy requirements into a tidy point-of-sale app. New staff can use it within a day. Communication was clear and delivery was always on time." } },
     { name: "Rina Maharani", role: { id: "Product Manager, Rute Kita", en: "Product Manager, Rute Kita" }, initials: "RM",
-      text: { id: "Jarang menemukan developer yang peduli pada detail desain sekaligus performa. Waktu muat aplikasi kami turun lebih dari separuh setelah Alya turun tangan.",
-              en: "It's rare to find a developer who cares about design detail and performance alike. Our app's load time dropped by more than half after Alya stepped in." } },
+      text: { id: "Jarang menemukan developer yang peduli pada detail desain sekaligus performa. Waktu muat aplikasi kami turun lebih dari separuh setelah Bimo turun tangan.",
+              en: "It's rare to find a developer who cares about design detail and performance alike. Our app's load time dropped by more than half after Bimo stepped in." } },
     { name: "Bima Prasetyo", role: { id: "Dosen, Institut Teknologi", en: "Lecturer, Institute of Technology" }, initials: "BP",
-      text: { id: "Workshop yang dibawakan Alya mudah diikuti dan penuh contoh nyata. Mahasiswa saya langsung bisa mempraktikkannya di proyek akhir mereka.",
-              en: "Alya's workshop was easy to follow and full of real examples. My students could apply it to their final projects right away." } }
+      text: { id: "Workshop yang dibawakan Bimo mudah diikuti dan penuh contoh nyata. Mahasiswa saya langsung bisa mempraktikkannya di proyek akhir mereka.",
+              en: "Bimo's workshop was easy to follow and full of real examples. My students could apply it to their final projects right away." } }
   ],
 
-  stack: ["HTML5", "CSS3", "JavaScript", "TypeScript", "React", "Next.js", "Node.js", "Laravel",
+  stack: ["HTML5", "CSS3", "JavaScript", "React", "Next.js", "Node.js", "Laravel", "R Programming"
           "PostgreSQL", "MongoDB", "Docker", "Git", "Figma", "Tailwind CSS", "React Native", "Linux"],
 
   education: [
     { period: "2017 – 2021",
-      title: { id: "S1 Teknik Informatika", en: "B.Sc. in Informatics Engineering" },
-      org: "Institut Teknologi Nusantara",
-      text: { id: "Lulus dengan predikat cum laude. Skripsi tentang optimasi performa aplikasi web progresif.",
-              en: "Graduated cum laude. Thesis on performance optimisation for progressive web apps." } },
-    { period: "2021",
+      title: { id: "S1 Biologi", en: "B.Sc. in Biology" },
+      org: "University of Indonesia",
+      text: { id: "IPK 3.60/4.00. Skripsi tentang Efektivitas CAR-NK pada Heparcarcinoma di tikus.",
+              en: "GPA 3.60/4.00. Thesis on effectivity CAR-NK in HCC mice." } },
+    { period: "2023",
       title: { id: "Sertifikasi UX Design", en: "UX Design Certification" },
       org: "Program daring",
       text: { id: "Riset pengguna, wireframing, dan pengujian kegunaan dari awal sampai akhir.",
               en: "User research, wireframing, and usability testing end to end." } },
     { period: "2014 – 2017",
-      title: { id: "SMA Negeri, Jurusan IPA", en: "Public High School, Science Track" },
-      org: "Bandung",
-      text: { id: "Aktif di ekstrakurikuler robotika dan jurnalistik sekolah.",
-              en: "Active in the robotics club and school journalism." } }
+      title: { id: "SMA Negeri 103 Jakarta, Jurusan IPA", en: "Public High School 103 Jakarta, Science Track" },
+      org: "Jakarta"}
   ],
 
   experience: [
@@ -123,7 +121,7 @@ window.SITE = {
     { name: "HTML & CSS",                level: 95 },
     { name: "JavaScript / TypeScript",   level: 90 },
     { name: "React & Next.js",           level: 88 },
-    { name: "Node.js & REST API",        level: 85 },
+    { name: "TensorFlow",                level: 85 },
     { name: "UI/UX (Figma)",             level: 80 },
     { name: "PostgreSQL & MongoDB",      level: 78 },
     { name: "Docker & CI/CD",            level: 65 }
